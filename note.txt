@@ -1,0 +1,5 @@
+=======Git And GitHub========
+git status - this can be done at anytime
+git init - this is used to initialize and empty git repo (only for a new project)
+git add . - this 
+git commit (-m = message)"first commit" -
