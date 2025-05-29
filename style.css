@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--Very-dark-blue:hsl(220, 13%, 13%);
+--Dark-grayish-blue:hsl(219, 9%, 45%);
+--Grayish-blue:hsl(220, 14%, 75%);
+--Light-grayish-blue:hsl(223, 64%, 98%);
+--White:hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--orange:hsl(26, 100%, 55%);
+--Pale-orange:hsl(25, 100%, 94%);
+}
+body{
+    font-family:"Kumbh Sans", sans-serif;
+    /* border: 5px solid red; */
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 12px;
+}
+p{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    display: none;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-section-1a{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.nav-section-2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 14px;
+}
+.nav-section-2 div:last-child{
+    max-width: 20%;
+}.nav-section-2 div:last-child img{
+    max-width: 100%;
+}
+/* main */
+.hero-img img{
+    max-width: 100%;
+}
+.sneakers-div{
+    position: relative;
+}
+#arrows-wrapper{
+    position: absolute;
+    bottom: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+}
+.arrow-divs{
+    background-color: var(--White);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+}
+#thumbnail-wrapper{
+    display: none;
+}
+/* section-2 */
+#section-2-div-1 h4{
+    color: var(--Dark-grayish-blue);
+    font-weight: 700;
+    font-size: 19px;
+}
+#section-2-div-1 h1{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+#section-2-div-2 > p{
+    color: var(--Grayish-blue);
+    line-height: 1.9;
+}
+.section-2-div-3{
+    /* border: 1px solid ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.section-2-div-3 #numbers{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+   gap: 20px;
+   /* border: 1px solid ; */
+}
+#numbers h5{
+background-color: var(--Black);
+color: var(--White);
+padding: 6px 10px;
+border-radius: 8px;
+}
+.section-2-div-3 p{
+    position: absolute;
+    margin-top: 25px;
+    padding-left: 80%;
+    color: var(--Dark-grayish-blue);
+    /* border: 1px solid red; */
+}
+.section-2-div-4{
+    background-color: var(--Light-grayish-blue);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-2-div-4 img{
+height: 1%;
+}
+.section-2-div-4 #minus{
+padding-top: 10px;
+}
+.section-2-div-4 #plus{
+    padding-top: 5px;
+}
+button{
+    background-color: var(--orange);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    gap:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    border: none;
+}
+button img{
+    max-width: 5%;
+}
+button img{
+    margin-right: 16px;
+}
+
+
+@media(min-width: 1024px){
+    .container{
+        /* border: 2px solid red; */
+        padding: 20px 150px;
+    }
+    #nav{
+        border-bottom: 2px solid var(--Grayish-blue);
+        margin-bottom: 34px;
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        color: var(--Dark-grayish-blue);
+    }
+    .nav-section-1{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    #nav-menu-wrapper{
+        display: none;
+    }
+    main{
+        display: flex;
+    }
+    .container#arrows-wrapper{
+        display: none;
+    }
+    #thumbnail-wrapper{
+        display: block;
+        display: flex;
+    }
+}
